@@ -1,7 +1,14 @@
+import TodoInput from "./components/TodoInput";
+import TodoList from "./components/TodoList";
 import TodoTemplate from "./components/TodoTemplate";
 
 function App() {
-  return <TodoTemplate>일정 관리 앱을 만들어 봅시다.</TodoTemplate>;
+  return (
+    <TodoTemplate>
+      <TodoInput />
+      <TodoList />
+    </TodoTemplate>
+  );
 }
 
 export default App;
