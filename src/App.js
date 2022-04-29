@@ -6,7 +6,7 @@ import TodoTemplate from "./components/TodoTemplate";
 const createBulkTodos = () => {
   const todos = [];
   for (let i = 1; i <= 3000; i++) {
-    todos.push({ id: i, text: `할 일 #{${i}}`, checked: false });
+    todos.push({ id: i, text: `할 일 #${i}`, checked: false });
   }
   return todos;
 };
