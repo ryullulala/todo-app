@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from "react";
 import TodoInput from "./components/TodoInput";
-import TodoList from "./components/TodoList";
+import TodoList2 from "./components/TodoList";
 import TodoTemplate from "./components/TodoTemplate";
 
 const createBulkTodos = () => {
@@ -41,7 +41,7 @@ function App() {
   return (
     <TodoTemplate>
       <TodoInput onInsert={insertTodo} />
-      <TodoList todos={todos} onToggle={toggleTodo} onRemove={removeTodo} />
+      <TodoList2 todos={todos} onToggle={toggleTodo} onRemove={removeTodo} />
     </TodoTemplate>
   );
 }
